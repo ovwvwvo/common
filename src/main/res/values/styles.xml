@@ -1,0 +1,167 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- App Theme -->
+    <style name="AppTheme.NoActionBar" parent="BaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Red App Theme -->
+    <style name="ThemeRed" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_red_500</item>
+        <item name="colorPrimaryDark">@color/material_red_700</item>
+        <item name="colorAccent">@color/material_red_a700</item>
+    </style>
+
+    <style name="AppTheme.Red" parent="ThemeRed">
+        <item name="dialogTheme">@style/ThemeRed</item>
+        <item name="alertDialogTheme">@style/ThemeRed</item>
+    </style>
+
+
+    <!-- Orange App Theme -->
+    <style name="ThemeOrange" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_orange_500</item>
+        <item name="colorPrimaryDark">@color/material_orange_700</item>
+        <item name="colorAccent">@color/material_orange_a700</item>
+    </style>
+
+    <style name="AppTheme.Orange" parent="ThemeOrange">
+        <item name="dialogTheme">@style/ThemeOrange</item>
+        <item name="alertDialogTheme">@style/ThemeOrange</item>
+    </style>
+
+
+    <!-- Lime App Theme -->
+    <style name="ThemeLime" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_lime_500</item>
+        <item name="colorPrimaryDark">@color/material_lime_700</item>
+        <item name="colorAccent">@color/material_lime_a700</item>
+    </style>
+
+    <style name="AppTheme.Lime" parent="ThemeLime">
+        <item name="dialogTheme">@style/ThemeLime</item>
+        <item name="alertDialogTheme">@style/ThemeLime</item>
+    </style>
+
+    <!-- Green App Theme -->
+    <style name="ThemeGreen" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_green_500</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_green_a700</item>
+    </style>
+
+    <style name="AppTheme.Green" parent="ThemeGreen">
+        <item name="dialogTheme">@style/ThemeGreen</item>
+        <item name="alertDialogTheme">@style/ThemeGreen</item>
+    </style>
+
+    <!-- Teal App Theme -->
+    <style name="ThemeTeal" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_teal_500</item>
+        <item name="colorPrimaryDark">@color/material_teal_700</item>
+        <item name="colorAccent">@color/material_teal_a700</item>
+    </style>
+
+    <style name="AppTheme.Teal" parent="ThemeTeal">
+        <item name="dialogTheme">@style/ThemeTeal</item>
+        <item name="alertDialogTheme">@style/ThemeTeal</item>
+    </style>
+
+    <!-- Blue App Theme -->
+    <style name="ThemeBlue" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_blue_500</item>
+        <item name="colorPrimaryDark">@color/material_blue_700</item>
+        <item name="colorAccent">@color/material_blue_a700</item>
+    </style>
+
+    <style name="AppTheme.Blue" parent="ThemeBlue">
+        <item name="dialogTheme">@style/ThemeBlue</item>
+        <item name="alertDialogTheme">@style/ThemeBlue</item>
+    </style>
+
+    <!-- Purple App Theme -->
+    <style name="ThemePurple" parent="AppTheme.NoActionBar">
+        <item name="colorPrimary">@color/material_purple_500</item>
+        <item name="colorPrimaryDark">@color/material_purple_700</item>
+        <item name="colorAccent">@color/material_purple_a700</item>
+    </style>
+
+    <style name="AppTheme.Purple" parent="ThemePurple">
+        <item name="dialogTheme">@style/ThemePurple</item>
+        <item name="alertDialogTheme">@style/ThemePurple</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Light App Bar Theme -->
+    <style name="AppTheme.AppBar.Light" parent="ThemeOverlay.AppCompat.ActionBar"/>
+
+    <!-- Dark App Bar Theme -->
+    <style name="AppTheme.AppBar.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- Light Overlay Theme -->
+    <style name="AppTheme.Overlay.Light" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Dark Overlay Theme -->
+    <style name="AppTheme.Overlay.Dark" parent="ThemeOverlay.AppCompat.Dark"/>
+
+    <!-- Button Styles -->
+    <style name="ButtonStyle" parent="Widget.AppCompat.Button"/>
+
+    <style name="ButtonStyle.Colored" parent="Widget.AppCompat.Button.Colored"/>
+
+    <style name="ButtonStyle.Borderless" parent="Widget.AppCompat.Button.Borderless"/>
+
+    <style name="ButtonStyle.Borderless.ColoredText" parent="Widget.AppCompat.Button.Borderless.Colored"/>
+
+    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton"/>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton"/>
+
+    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox"/>
+
+    <style name="SwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch"/>
+
+    <!-- Text Styles -->
+    <style name="TextStyle" parent="TextAppearance.AppCompat"/>
+
+    <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title"/>
+
+    <style name="TextStyle.Body1" parent="TextAppearance.AppCompat.Body1"/>
+
+    <style name="TextStyle.Body2" parent="TextAppearance.AppCompat.Body2"/>
+
+    <!-- Edit Text Styles -->
+    <style name="EditTextStyle" parent="Widget.AppCompat.EditText"/>
+
+    <style name="TextInputLayoutStyle" parent="Widget.Design.TextInputLayout"/>
+
+    <!-- Spinner Styles -->
+    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner"/>
+
+    <style name="SpinnerStyle.Underlined" parent="Widget.AppCompat.Spinner.Underlined"/>
+
+    <!-- Progress Bar Styles -->
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar"/>
+
+    <style name="ProgressBarStyle.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <!-- Slider Styles -->
+    <style name="SeekbarStyle" parent="Widget.AppCompat.SeekBar"/>
+
+    <!-- Image Styles -->
+    <style name="ImageStyle">
+        <item name="android:tint">?colorAccent</item>
+    </style>
+
+</resources>
