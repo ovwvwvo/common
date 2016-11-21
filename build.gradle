@@ -2,14 +2,14 @@ apply plugin: 'com.android.library'
 apply plugin: 'android-apt'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "24.0.3"
+    compileSdkVersion appCompileSdkVersion
+    buildToolsVersion appBuildToolVersion
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion appMinSdkVersion
+        targetSdkVersion appTargetSdkVersion
+        versionCode appVersionCode
+        versionName appVersionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -26,19 +26,14 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':JLibary')
 
-    testCompile 'junit:junit:4.12'
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    compile "com.android.support:appcompat-v7:$appSupportLibVersion"
+    compile "com.android.support:design:$appSupportLibVersion"
 
-    compile 'com.android.support:appcompat-v7:25.0.1'
-    compile 'com.android.support:design:25.0.1'
+    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
 
-    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
-    compile 'com.squareup.retrofit2:retrofit:2.1.0'
-    compile 'io.reactivex:rxandroid:1.1.0'
-    compile 'io.reactivex:rxjava:1.1.0'
-    compile 'com.jakewharton:butterknife:8.2.1'
-    apt 'com.jakewharton:butterknife-compiler:8.2.1'
+    compile "io.reactivex:rxandroid:$rxVersion"
+    compile "io.reactivex:rxjava:$rxVersion"
+
+    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    compile "com.jakewharton:butterknife:$butterknifeVersion"
 }
