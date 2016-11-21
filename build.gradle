@@ -24,7 +24,6 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':JLibary')
 
     compile "com.android.support:appcompat-v7:$appSupportLibVersion"
     compile "com.android.support:design:$appSupportLibVersion"
