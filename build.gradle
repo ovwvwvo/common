@@ -25,6 +25,5 @@ dependencies {
     compile "com.android.support:appcompat-v7:$appSupportLibVersion"
     compile "com.android.support:recyclerview-v7:$appSupportLibVersion"
     compile "com.android.support:design:$appSupportLibVersion"
-    compile "com.android.support:design:$appSupportLibVersion"
-
+    compile "com.android.support:cardview-v7:$appSupportLibVersion"
 }
