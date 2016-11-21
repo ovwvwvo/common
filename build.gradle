@@ -24,16 +24,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile project(':JLibary')
 
     compile "com.android.support:appcompat-v7:$appSupportLibVersion"
+    compile "com.android.support:recyclerview-v7:$appSupportLibVersion"
+    compile "com.android.support:design:$appSupportLibVersion"
     compile "com.android.support:design:$appSupportLibVersion"
 
-    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-
-    compile "io.reactivex:rxandroid:$rxVersion"
-    compile "io.reactivex:rxjava:$rxVersion"
-
-    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
-    compile "com.jakewharton:butterknife:$butterknifeVersion"
 }
