@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'android-apt'
 
 android {
     compileSdkVersion appCompileSdkVersion
@@ -10,10 +9,8 @@ android {
         targetSdkVersion appTargetSdkVersion
         versionCode appVersionCode
         versionName appVersionName
-
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -25,16 +22,8 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile 'cn.ovwvwvo.android:JLibary:0.1.2'
-
     compile "com.android.support:appcompat-v7:$appSupportLibVersion"
+    compile "com.android.support:recyclerview-v7:$appSupportLibVersion"
     compile "com.android.support:design:$appSupportLibVersion"
-
-    compile "com.squareup.retrofit2:retrofit:$retrofitVersion"
-
-    compile "io.reactivex:rxandroid:$rxVersion"
-    compile "io.reactivex:rxjava:$rxVersion"
-
-    apt "com.jakewharton:butterknife-compiler:$butterknifeVersion"
-    compile "com.jakewharton:butterknife:$butterknifeVersion"
+    compile "com.android.support:cardview-v7:$appSupportLibVersion"
 }
