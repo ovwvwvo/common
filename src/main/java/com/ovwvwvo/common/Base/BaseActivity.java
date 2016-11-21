@@ -20,7 +20,7 @@ public abstract class BaseActivity<P extends Presenter> extends AppCompatActivit
     P mPresenter;
     private CompositeSubscription mCompositeSubscription;
 
-    abstract P createPresenter();
+    protected abstract P createPresenter();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
