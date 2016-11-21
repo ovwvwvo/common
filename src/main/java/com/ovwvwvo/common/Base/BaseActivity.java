@@ -16,7 +16,7 @@ import rx.subscriptions.CompositeSubscription;
 
 public abstract class BaseActivity<P extends Presenter> extends AppCompatActivity {
 
-    Context mContext;
+    public Context mContext;
     P mPresenter;
     private CompositeSubscription mCompositeSubscription;
 
