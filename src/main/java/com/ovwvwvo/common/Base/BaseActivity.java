@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.ovwvwvo.common.mvp.presenter.Presenter;
 import com.ovwvwvo.jlibrary.utils.ToastUtil;
+import com.umeng.analytics.MobclickAgent;
 
 import butterknife.ButterKnife;
 import rx.Subscription;
@@ -27,6 +28,15 @@ public abstract class BaseActivity<P extends Presenter> extends AppCompatActivit
         mPresenter = createPresenter();
         super.onCreate(savedInstanceState);
         mContext = this;
+    }
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(this);
+    }
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(this);
     }
 
     @Override

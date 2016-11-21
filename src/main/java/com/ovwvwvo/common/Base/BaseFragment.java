@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.ovwvwvo.common.mvp.presenter.Presenter;
 import com.ovwvwvo.jlibrary.utils.ToastUtil;
+import com.umeng.analytics.MobclickAgent;
 
 import rx.Subscription;
 import rx.subscriptions.CompositeSubscription;
@@ -17,7 +18,7 @@ import rx.subscriptions.CompositeSubscription;
 public abstract class BaseFragment<P extends Presenter> extends Fragment {
 
     P presenter;
-    Context mContent;
+    Context mContext;
 
     private CompositeSubscription mCompositeSubscription;
 
@@ -26,9 +27,19 @@ public abstract class BaseFragment<P extends Presenter> extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mContent = getContext();
+        mContext = getContext();
 
         presenter = createPresenter();
+    }
+
+    public void onResume() {
+        super.onResume();
+        MobclickAgent.onResume(mContext);
+    }
+
+    public void onPause() {
+        super.onPause();
+        MobclickAgent.onPause(mContext);
     }
 
     @Override
@@ -46,7 +57,7 @@ public abstract class BaseFragment<P extends Presenter> extends Fragment {
     }
 
     protected void toastShow(String message) {
-        ToastUtil.showShort(mContent, message);
+        ToastUtil.showShort(mContext, message);
     }
 
     public void onUnsubscribe() {
