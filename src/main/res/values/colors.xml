@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- title & body T1 -->
+    <color name="color_grey_22">#383838</color>
+    <!-- body T2 -->
+    <color name="color_grey_50">#808080</color>
+    <!-- read body T2 & ST & icon -->
+    <color name="color_grey_64">#a6a6a6</color>
+    <!-- hint -->
+    <color name="color_grey_80">#cccccc</color>
+    <!-- divider & disable -->
+    <color name="color_grey_85">#d9d9d9</color>
+    <!-- tag background & chat item background. etc -->
+    <color name="color_grey_93">#eeeeee</color>
+    <!-- background & toolbar -->
+    <color name="color_grey_97">#f7f7f7</color>
+    <!-- background for info banners-->
+    <color name="color_info_banner">#f6fcff</color>
+
     <!-- Material Color Palette -->
     <color name="gray_050">#FAFAFA</color>
     <color name="gray_100">#F5F5F5</color>

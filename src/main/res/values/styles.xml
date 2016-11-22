@@ -1,167 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/color_grey_64</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:buttonStyle">@style/Widget.Button</item>
+        <item name="android:dialogTheme">@style/Theme.Dialog</item>
+        <item name="android:windowBackground">@android:color/white</item>
     </style>
 
-    <!-- App Theme -->
-    <style name="AppTheme.NoActionBar" parent="BaseTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="Theme.Black">
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="android:windowBackground">@android:color/black</item>
     </style>
 
-    <!-- Red App Theme -->
-    <style name="ThemeRed" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_red_500</item>
-        <item name="colorPrimaryDark">@color/material_red_700</item>
-        <item name="colorAccent">@color/material_red_a700</item>
+    <style name="Theme.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
     </style>
 
-    <style name="AppTheme.Red" parent="ThemeRed">
-        <item name="dialogTheme">@style/ThemeRed</item>
-        <item name="alertDialogTheme">@style/ThemeRed</item>
+    <style name="Theme.Dialog.Bottom">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_exit</item>
+        <!-- 设置自定义布局的背景透明 -->
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 设置window背景透明，也就是去边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Dialog.Progressbar" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- ThemeOverlay -->
+    <eat-comment/>
+
+    <style name="ThemeOverlay.MenuOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:textColor">@color/color_grey_22</item>
+    </style>
+
+    <!-- Widget -->
+    <eat-comment/>
+
+    <style name="Widget.ActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/color_grey_97</item>
+        <item name="android:actionBarSize">56dp</item>
+    </style>
+
+    <style name="Widget.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.EditText.Normal" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_marginRight">32dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.Black</item>
+        <item name="android:textColorHint">@color/color_grey_80</item>
+    </style>
+
+    <style name="Widget.TextView.SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Widget.DropDownItem" parent="@android:style/Widget.DropDownItem">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="Widget.ListView" parent="Widget.AppCompat.ListView">
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:divider">@null</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:listChoiceBackgroundIndicator">@null</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <!-- TextAppearance -->
+    <eat-comment/>
+
+    <style name="TextAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_grey_22</item>
+        <item name="android:textColorHint">@color/color_grey_80</item>
+        <item name="android:textColorHighlight">@color/red_a200</item>
+        <item name="android:textColorLink">@color/blue_500</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
     </style>
 
 
-    <!-- Orange App Theme -->
-    <style name="ThemeOrange" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_orange_500</item>
-        <item name="colorPrimaryDark">@color/material_orange_700</item>
-        <item name="colorAccent">@color/material_orange_a700</item>
+    <style name="TextAppearance.H2">
+        <item name="android:textSize">@dimen/text_size_large_2</item>
     </style>
 
-    <style name="AppTheme.Orange" parent="ThemeOrange">
-        <item name="dialogTheme">@style/ThemeOrange</item>
-        <item name="alertDialogTheme">@style/ThemeOrange</item>
+    <style name="TextAppearance.H2.Black">
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
-
-    <!-- Lime App Theme -->
-    <style name="ThemeLime" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_lime_500</item>
-        <item name="colorPrimaryDark">@color/material_lime_700</item>
-        <item name="colorAccent">@color/material_lime_a700</item>
+    <style name="TextAppearance.H2.Bold">
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="AppTheme.Lime" parent="ThemeLime">
-        <item name="dialogTheme">@style/ThemeLime</item>
-        <item name="alertDialogTheme">@style/ThemeLime</item>
+    <style name="TextAppearance.H1">
+        <item name="android:textSize">@dimen/text_size_large_1</item>
     </style>
 
-    <!-- Green App Theme -->
-    <style name="ThemeGreen" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_green_500</item>
-        <item name="colorPrimaryDark">@color/material_green_700</item>
-        <item name="colorAccent">@color/material_green_a700</item>
+    <style name="TextAppearance.H1.LightGrey">
+        <item name="android:textColor">@color/color_grey_64</item>
     </style>
 
-    <style name="AppTheme.Green" parent="ThemeGreen">
-        <item name="dialogTheme">@style/ThemeGreen</item>
-        <item name="alertDialogTheme">@style/ThemeGreen</item>
+    <style name="TextAppearance.H1.Bold">
+        <item name="android:textStyle">bold</item>
     </style>
 
-    <!-- Teal App Theme -->
-    <style name="ThemeTeal" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_teal_500</item>
-        <item name="colorPrimaryDark">@color/material_teal_700</item>
-        <item name="colorAccent">@color/material_teal_a700</item>
+    <style name="TextAppearance.H1.Black">
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
-    <style name="AppTheme.Teal" parent="ThemeTeal">
-        <item name="dialogTheme">@style/ThemeTeal</item>
-        <item name="alertDialogTheme">@style/ThemeTeal</item>
+    <style name="TextAppearance.T1"/>
+
+    <style name="TextAppearance.T1.Grey">
+        <item name="android:textColor">@color/color_grey_50</item>
     </style>
 
-    <!-- Blue App Theme -->
-    <style name="ThemeBlue" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_blue_500</item>
-        <item name="colorPrimaryDark">@color/material_blue_700</item>
-        <item name="colorAccent">@color/material_blue_a700</item>
+    <style name="TextAppearance.T1.LightGrey">
+        <item name="android:textColor">@color/color_grey_64</item>
     </style>
 
-    <style name="AppTheme.Blue" parent="ThemeBlue">
-        <item name="dialogTheme">@style/ThemeBlue</item>
-        <item name="alertDialogTheme">@style/ThemeBlue</item>
+    <style name="TextAppearance.T1.White">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <!-- Purple App Theme -->
-    <style name="ThemePurple" parent="AppTheme.NoActionBar">
-        <item name="colorPrimary">@color/material_purple_500</item>
-        <item name="colorPrimaryDark">@color/material_purple_700</item>
-        <item name="colorAccent">@color/material_purple_a700</item>
+    <style name="TextAppearance.T1.DarkHint">
+        <item name="android:textColorHint">@color/color_grey_64</item>
     </style>
 
-    <style name="AppTheme.Purple" parent="ThemePurple">
-        <item name="dialogTheme">@style/ThemePurple</item>
-        <item name="alertDialogTheme">@style/ThemePurple</item>
+    <style name="TextAppearance.White">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="TextAppearance.Black">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="TextAppearance.LightGrey">
+        <item name="android:textColor">@color/color_grey_64</item>
+    </style>
 
-    <!-- Light App Bar Theme -->
-    <style name="AppTheme.AppBar.Light" parent="ThemeOverlay.AppCompat.ActionBar"/>
+    <style name="TextAppearance.T2">
+        <item name="android:textSize">@dimen/text_size_small_1</item>
+    </style>
 
-    <!-- Dark App Bar Theme -->
-    <style name="AppTheme.AppBar.Dark" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="TextAppearance.T2.Grey">
+        <item name="android:textColor">@color/color_grey_50</item>
+    </style>
 
-    <!-- Light Overlay Theme -->
-    <style name="AppTheme.Overlay.Light" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="TextAppearance.T2.LightGrey">
+        <item name="android:textColor">@color/color_grey_64</item>
+    </style>
 
-    <!-- Dark Overlay Theme -->
-    <style name="AppTheme.Overlay.Dark" parent="ThemeOverlay.AppCompat.Dark"/>
+    <style name="TextAppearance.T2.LighterGrey">
+        <item name="android:textColor">@color/color_grey_80</item>
+    </style>
 
-    <!-- Button Styles -->
-    <style name="ButtonStyle" parent="Widget.AppCompat.Button"/>
+    <style name="TextAppearance.T2.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 
-    <style name="ButtonStyle.Colored" parent="Widget.AppCompat.Button.Colored"/>
+    <style name="TextAppearance.ST">
+        <item name="android:textSize">@dimen/text_size_small_2</item>
+    </style>
 
-    <style name="ButtonStyle.Borderless" parent="Widget.AppCompat.Button.Borderless"/>
+    <style name="TextAppearance.ST.White">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 
-    <style name="ButtonStyle.Borderless.ColoredText" parent="Widget.AppCompat.Button.Borderless.Colored"/>
+    <style name="TextAppearance.ST.Grey">
+        <item name="android:textColor">@color/color_grey_50</item>
+    </style>
 
-    <style name="FloatingActionButtonStyle" parent="Widget.Design.FloatingActionButton"/>
+    <style name="TextAppearance.ST.LightGrey">
+        <item name="android:textColor">@color/color_grey_64</item>
+    </style>
 
-    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton"/>
+    <style name="TextAppearance.ST.LighterGrey">
+        <item name="android:textColor">@color/color_grey_80</item>
+    </style>
 
-    <style name="CheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox"/>
+    <style name="TextAppearance.TT">
+        <item name="android:textSize">@dimen/text_size_small_3</item>
+    </style>
 
-    <style name="SwitchStyle" parent="Widget.AppCompat.CompoundButton.Switch"/>
-
-    <!-- Text Styles -->
-    <style name="TextStyle" parent="TextAppearance.AppCompat"/>
-
-    <style name="TextStyle.Title" parent="TextAppearance.AppCompat.Title"/>
-
-    <style name="TextStyle.Body1" parent="TextAppearance.AppCompat.Body1"/>
-
-    <style name="TextStyle.Body2" parent="TextAppearance.AppCompat.Body2"/>
-
-    <!-- Edit Text Styles -->
-    <style name="EditTextStyle" parent="Widget.AppCompat.EditText"/>
-
-    <style name="TextInputLayoutStyle" parent="Widget.Design.TextInputLayout"/>
-
-    <!-- Spinner Styles -->
-    <style name="SpinnerStyle" parent="Widget.AppCompat.Spinner"/>
-
-    <style name="SpinnerStyle.Underlined" parent="Widget.AppCompat.Spinner.Underlined"/>
-
-    <!-- Progress Bar Styles -->
-    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar"/>
-
-    <style name="ProgressBarStyle.Horizontal" parent="Widget.AppCompat.ProgressBar.Horizontal"/>
-
-    <!-- Slider Styles -->
-    <style name="SeekbarStyle" parent="Widget.AppCompat.SeekBar"/>
-
-    <!-- Image Styles -->
-    <style name="ImageStyle">
-        <item name="android:tint">?colorAccent</item>
+    <style name="TextAppearance.TT.White">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
 </resources>
