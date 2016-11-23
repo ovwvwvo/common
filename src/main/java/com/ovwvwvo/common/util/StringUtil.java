@@ -1,5 +1,5 @@
 /**
- * Copyright © 2016 by Teambition
+ * Copyright © 2016 by ovwvwvo
  */
 
 package com.ovwvwvo.common.util;
