@@ -109,8 +109,16 @@
         <item name="android:textSize">@dimen/text_size_large_2</item>
     </style>
 
+    <style name="TextAppearance.H2.LightGrey">
+        <item name="android:textColor">@color/color_grey_64</item>
+    </style>
+
     <style name="TextAppearance.H2.Black">
         <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextAppearance.H2.White">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="TextAppearance.H2.Bold">
@@ -131,6 +139,10 @@
 
     <style name="TextAppearance.H1.Black">
         <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TextAppearance.H1.White">
+        <item name="android:textColor">@android:color/white</item>
     </style>
 
     <style name="TextAppearance.T1"/>
