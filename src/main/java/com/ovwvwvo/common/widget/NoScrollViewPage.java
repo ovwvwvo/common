@@ -6,9 +6,10 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 
 /**
- * Created by mac on 16/8/17.
+ * Created by ovwvwvo on 16/8/17.
  */
 public class NoScrollViewPage extends ViewPager {
+
     private boolean isPagingEnabled = false;
 
     public NoScrollViewPage(Context context) {

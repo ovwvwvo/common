@@ -1,4 +1,4 @@
-package com.ovwvwvo.common.widget;
+package com.ovwvwvo.common.widget.EditText;
 
 import android.content.Context;
 import android.graphics.drawable.Drawable;
@@ -7,10 +7,8 @@ import android.util.AttributeSet;
 
 import com.ovwvwvo.common.R;
 
-/**
- * Created by ky on 8/4/16.
- */
 public class PassWordEditText extends RightDrawableEditText {
+
     public PassWordEditText(Context context) {
         super(context);
     }
@@ -38,8 +36,7 @@ public class PassWordEditText extends RightDrawableEditText {
             drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());
         }
         setCompoundDrawables(getCompoundDrawables()[0], getCompoundDrawables()[1],
-                drawable, getCompoundDrawables()[3]);
+            drawable, getCompoundDrawables()[3]);
         setSelection(getText().length());
-
     }
 }

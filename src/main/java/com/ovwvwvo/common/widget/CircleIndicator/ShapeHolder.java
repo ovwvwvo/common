@@ -9,6 +9,7 @@ import android.graphics.drawable.shapes.Shape;
  * how the shape is drawn.
  */
 public class ShapeHolder {
+
     private float x = 0, y = 0;
     private ShapeDrawable shape;
     private int color;

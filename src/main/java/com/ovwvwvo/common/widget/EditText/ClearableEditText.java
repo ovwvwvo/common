@@ -13,20 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.ovwvwvo.common.widget;
+package com.ovwvwvo.common.widget.EditText;
 
 import android.content.Context;
 import android.util.AttributeSet;
 
 /**
- * To change clear icon, set
- * <p/>
- * <pre>
- * android:drawableRight="@drawable/custom_icon"
- * </pre>
+ * To change clear icon, set android:drawableRight="@drawable/custom_icon"
  */
 public class ClearableEditText extends RightDrawableEditText {
-
 
     public ClearableEditText(Context context) {
         super(context);

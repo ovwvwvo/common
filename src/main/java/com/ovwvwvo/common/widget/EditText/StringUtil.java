@@ -2,7 +2,7 @@
  * Copyright © 2016 by ovwvwvo
  */
 
-package com.ovwvwvo.common.util;
+package com.ovwvwvo.common.widget.EditText;
 
 import android.support.annotation.Nullable;
 
@@ -10,24 +10,21 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Utility methods regarding java.lang.String
- */
-public class StringUtil {
+class StringUtil {
 
-    public static boolean isEmpty(@Nullable CharSequence str) {
+    static boolean isEmpty(@Nullable CharSequence str) {
         return (str == null || str.length() == 0);
     }
 
-    public static boolean isNotEmpty(@Nullable CharSequence str) {
+    static boolean isNotEmpty(@Nullable CharSequence str) {
         return !isEmpty(str);
     }
 
-    public static boolean isBlank(String str) {
+    static boolean isBlank(String str) {
         return isEmpty(str) || isEmpty(str.trim());
     }
 
-    public static boolean isNotBlank(String str) {
+    static boolean isNotBlank(String str) {
         return !isBlank(str);
     }
 

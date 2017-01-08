@@ -19,11 +19,8 @@ import com.ovwvwvo.common.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by xiayong on 2015/9/29.
- * https://github.com/THEONE10211024/CircleIndicator
- */
 public class CircleIndicator extends View {
+
     private ViewPager viewPager;
     private List<ShapeHolder> tabItems;
     private ShapeHolder movingItem;
@@ -39,12 +36,12 @@ public class CircleIndicator extends View {
     private Mode mIndicatorMode;
 
     //default value
-    private final int DEFAULT_INDICATOR_RADIUS = 10;
-    private final int DEFAULT_INDICATOR_MARGIN = 40;
-    private final int DEFAULT_INDICATOR_BACKGROUND = Color.BLUE;
-    private final int DEFAULT_INDICATOR_SELECTED_BACKGROUND = Color.RED;
-    private final int DEFAULT_INDICATOR_LAYOUT_GRAVITY = Gravity.CENTER.ordinal();
-    private final int DEFAULT_INDICATOR_MODE = Mode.SOLO.ordinal();
+    final int DEFAULT_INDICATOR_RADIUS = 10;
+    final int DEFAULT_INDICATOR_MARGIN = 40;
+    final int DEFAULT_INDICATOR_BACKGROUND = Color.BLUE;
+    final int DEFAULT_INDICATOR_SELECTED_BACKGROUND = Color.RED;
+    final int DEFAULT_INDICATOR_LAYOUT_GRAVITY = Gravity.CENTER.ordinal();
+    final int DEFAULT_INDICATOR_MODE = Mode.SOLO.ordinal();
 
     public enum Gravity {
         LEFT,
@@ -231,11 +228,11 @@ public class CircleIndicator extends View {
         Log.e("CircleIndicator", "onDraw()");
         super.onDraw(canvas);
         int sc = canvas.saveLayer(0, 0, getWidth(), getHeight(), null,
-                Canvas.MATRIX_SAVE_FLAG |
-                        Canvas.CLIP_SAVE_FLAG |
-                        Canvas.HAS_ALPHA_LAYER_SAVE_FLAG |
-                        Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
-                        Canvas.CLIP_TO_LAYER_SAVE_FLAG);
+            Canvas.MATRIX_SAVE_FLAG |
+                Canvas.CLIP_SAVE_FLAG |
+                Canvas.HAS_ALPHA_LAYER_SAVE_FLAG |
+                Canvas.FULL_COLOR_LAYER_SAVE_FLAG |
+                Canvas.CLIP_TO_LAYER_SAVE_FLAG);
         for (ShapeHolder item : tabItems) {
             drawItem(canvas, item);
         }
