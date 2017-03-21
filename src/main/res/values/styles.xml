@@ -99,8 +99,6 @@
     <style name="TextAppearance" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/color_grey_22</item>
         <item name="android:textColorHint">@color/color_grey_80</item>
-        <item name="android:textColorHighlight">@color/red_a200</item>
-        <item name="android:textColorLink">@color/blue_500</item>
         <item name="android:textSize">@dimen/text_size_normal</item>
     </style>
 
