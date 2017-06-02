@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="ResourceName">
 
     <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="colorControlNormal">@color/color_grey_64</item>

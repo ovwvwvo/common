@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="ResourceName">
 
     <!-- title & body T1 -->
     <color name="color_grey_22">#383838</color>
