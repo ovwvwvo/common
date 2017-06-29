@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 apply from: 'publicLibary.gradle'
+apply from: 'util.gradle'
 
 android {
     compileSdkVersion appCompileSdkVersion
@@ -13,7 +14,7 @@ android {
         minSdkVersion appMinSdkVersion
         targetSdkVersion appTargetSdkVersion
         versionCode appVersionCode
-        versionName appVersionName
+        versionName ""
     }
 
     buildTypes {
