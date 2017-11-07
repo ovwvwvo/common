@@ -14,16 +14,12 @@ import io.reactivex.disposables.Disposable;
 
 public class EmptyObserver<T> implements Observer<T> {
 
-    public static final String TAG = "EmptyObserver";
-
     public EmptyObserver() {
     }
 
-    public void onCompleted() {
-    }
-
+    @Override
     public void onError(Throwable e) {
-        Log.e(TAG, "onError", e);
+        Log.e("EmptyObserver", "onError", e);
     }
 
     @Override
@@ -36,6 +32,7 @@ public class EmptyObserver<T> implements Observer<T> {
 
     }
 
+    @Override
     public void onNext(T t) {
     }
 }

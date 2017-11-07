@@ -1,4 +1,4 @@
-package com.ovwvwvo.common.widget.manager;
+package com.ovwvwvo.common.widgetManager;
 
 import android.content.ContentResolver;
 import android.content.Context;

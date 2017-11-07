@@ -1,4 +1,4 @@
-package com.ovwvwvo.common.presenter;
+package com.ovwvwvo.common.mvp;
 
 /**
  * Copyright ©2017 by rawer

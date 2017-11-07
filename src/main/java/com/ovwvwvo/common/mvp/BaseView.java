@@ -1,4 +1,4 @@
-package com.ovwvwvo.common.view;
+package com.ovwvwvo.common.mvp;
 
 /**
  * Created by rawer on 17/2/28.

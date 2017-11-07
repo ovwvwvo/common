@@ -4,7 +4,7 @@
  *
  */
 
-package com.ovwvwvo.common.widget.manager;
+package com.ovwvwvo.common.widgetManager;
 
 import android.app.Activity;
 import android.graphics.Typeface;

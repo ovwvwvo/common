@@ -8,7 +8,7 @@ package com.ovwvwvo.common.utils;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-public class OtherUtil {
+public class ShellUtil {
 
     /**
      * 执行shell语句

@@ -4,7 +4,7 @@
  *
  */
 
-package com.ovwvwvo.common.widget.manager;
+package com.ovwvwvo.common.utils;
 
 import android.content.Context;
 import android.widget.Toast;

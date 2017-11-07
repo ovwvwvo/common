@@ -1,4 +1,4 @@
-package com.ovwvwvo.common.fragment;
+package com.ovwvwvo.common.mvp;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -7,13 +7,12 @@ import android.support.v4.app.Fragment;
 import android.widget.Toast;
 
 import com.ovwvwvo.common.R;
-import com.ovwvwvo.common.view.BaseView;
 
 /**
  * Created by rawer on 17/2/28.
  */
 
-public class BaseFragment extends Fragment implements BaseView {
+public final class BaseFragment extends Fragment implements BaseView {
 
     protected ProgressDialog progressDialog;
     protected Dialog progressBarDialog;
