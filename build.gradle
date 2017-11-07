@@ -5,25 +5,30 @@ apply from: 'publicLibary.gradle'
 apply from: 'util.gradle'
 
 android {
-    compileSdkVersion appCompileSdkVersion
-    buildToolsVersion appBuildToolVersion
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
 
-    resourcePrefix "ovwvwvo"
+    resourcePrefix "common"
 
     defaultConfig {
-        minSdkVersion appMinSdkVersion
-        targetSdkVersion appTargetSdkVersion
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode appVersionCode
-        versionName ""
+        versionName appVersionName
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     lintOptions {
+        checkReleaseBuilds true
         abortOnError false
     }
 }
@@ -31,11 +36,10 @@ android {
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
 
-    compile "com.android.support:appcompat-v7:$appSupportLibVersion"
-    compile "com.android.support:recyclerview-v7:$appSupportLibVersion"
-    compile "com.android.support:design:$appSupportLibVersion"
-    compile "com.android.support:cardview-v7:$appSupportLibVersion"
-
-    compile 'com.pnikosis:materialish-progress:1.1'
-
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.5'
 }

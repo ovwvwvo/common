@@ -1,5 +1,5 @@
 /**
- * Copyright © 2016 by ovwvwvo
+ * Copyright © 2016 by rawer
  */
 
 package com.ovwvwvo.common.widget.EditText;

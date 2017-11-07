@@ -1,7 +1,7 @@
 package com.ovwvwvo.common.view;
 
 /**
- * Created by ovwvwvo on 17/2/28.
+ * Created by rawer on 17/2/28.
  */
 public interface BaseView {
 

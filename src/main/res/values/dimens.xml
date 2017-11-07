@@ -33,8 +33,4 @@
     <dimen name="text_size_large_3">28sp</dimen>
     <dimen name="text_size_large_4">32sp</dimen>
 
-    <!-- functional dimensions -->
-    <dimen name="project_home_logo_height">120dp</dimen>
-    <dimen name="toolbar_shadow_height">3dp</dimen>
-
 </resources>

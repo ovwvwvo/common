@@ -1,7 +1,7 @@
 package com.ovwvwvo.common.presenter;
 
 /**
- * Copyright ©2017 by ovwvwvo
+ * Copyright ©2017 by rawer
  */
 
 public class BasePresenter {

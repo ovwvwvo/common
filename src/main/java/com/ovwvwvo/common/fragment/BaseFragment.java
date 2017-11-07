@@ -10,7 +10,7 @@ import com.ovwvwvo.common.R;
 import com.ovwvwvo.common.view.BaseView;
 
 /**
- * Created by ovwvwvo on 17/2/28.
+ * Created by rawer on 17/2/28.
  */
 
 public class BaseFragment extends Fragment implements BaseView {

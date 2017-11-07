@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import android.view.View;
 
 /**
- * Created by ovwvwvo on 16/8/21
+ * Created by rawer on 16/8/21
  */
 public class SquareView extends View {
 
