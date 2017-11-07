@@ -3,7 +3,7 @@ apply from: 'util.gradle'
 def siteUrl = 'https://github.com/rawer0/common.git'
 def gitUrl = 'https://github.com/rawer0/common.git'
 group = "com.ovwvwvo"
-version = appVersionName
+version = "0.1.8"
 
 bintray {
     user = "ovwvwvo"
